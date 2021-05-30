@@ -2,6 +2,7 @@
 
 var test = require('unit.js');
 var index = require('../index.js');
+var assert = require("assert");
 
 describe('Tests index', function() {
   it('verifies successful response', function(done) {
@@ -16,4 +17,7 @@ describe('Tests index', function() {
       }
     });
   });
+  it('Fails', () => {
+    assert.fail()
+  })
 });
